@@ -1,13 +1,11 @@
 ---
 layout: default
-title: Homework 01 - 
+title: Homework 01 - Setting up a Static Tech Blog on GitHub with Jekyll
 ---
 
 # Homework 01 - Setting up a Static Tech Blog on GitHub with Jekyll
 
-## Before starting
-
-这是一段碎碎念，可以跳过不看。
+首先是一段碎碎念，可以跳过不看。
 
 是的，这一次已经不知道是我第几次搭建技术博客了，之前的技术博客其实也一直是与生活博客混杂在一起的，通常写了没几篇文章后博客就长草了:) 这次刚好碰上做这个神奇的作业再搭一次，且看这个博客能存活多久吧 Orz
 
@@ -71,4 +69,54 @@ GitHub Pages 的官方介绍说它 "Hosted directly from your GitHub repository"
 
 所以请根据自己的需要制定这个新 Repo 的名字，并填写 Description（可选）。
 
+这里以 `robinWongM.github.io` 为例：
+
+![](images/01/github-new-repository-filled.png)
+
 为了可以马上在电脑上 Clone 这个 Repo，我选择 Initialize this repository with a README. 下方的 Add .gitignore，我选择了 Jekyll；Add a license 我选择了 MIT License。有兴趣的同学可以 Google 一下了解有关 License 的知识。
+
+点击 Create Repository 后，浏览器会跳转到你的新 Repo 页面：
+
+![](images/01/github-new-repository-done.png)
+
+## 3. Configure Your Jekyll
+
+这个时候我们就可以开始配置我们的 Jekyll 了。点击仓库页面仓库名字下方 Tab 栏上的 Settings，进入仓库设置，往下滑滑滑滑到 GitHub Pages：
+
+![](images/01/github-pages-in-settings.png)
+
+这里你可以看到一个名为 Choose a theme 的按钮，点击它，进入主题选择器：
+
+![](images/01/github-pages-theme-chooser.png)
+
+按照作业的要求，这里选择 Slate 主题后按下 Select theme 的绿色按钮，GitHub 便会生成一个默认的 README.md 和 _config.yaml，确认提交后便完成了 Jekyll 的初始化：
+
+![](images/01/github-pages-confirm-commit.png)
+
+此时访问你的 Pages，默认会展示 README.md 里的内容：
+
+![](images/01/github-pages-home-first-look.png)
+
+## 4. Write Your First Post
+
+那么要如何撰写我们的第一篇文章呢？如果你习惯本地编辑器（如 Visual Studio Code）编辑的话，相信你一定习惯了 git clone 之类的操作，而新建一篇文章只需要在仓库根目录新建一个任意名字的 `.md` 文件，如果你喜欢的话还可以新建一个 `index.md` 文件，自行建立博文索引。
+
+如果你对 git 的操作还不熟悉，那么建议你先使用 GitHub 的 Web 端编辑器体验一下如何写博客吧！打开你的仓库首页，点击 Clone or Download 按钮**旁边的 Create new file 按钮**，即可进入新建文件的页面：
+
+![](images/01/github-new-file.png)
+
+文件名以 `.md` 结尾，至于什么名字就随自己心意啦√ 下方是一个支持 GFM 的 Markdown 编辑器，撰写过程中可以随时按 Preview 预览效果。Markdown 有不同的标准，GitHub 支持的标准是 GFM（GitHub Flavored Markdown），具体 Spec 参见 [https://github.github.com/gfm/](https://github.github.com/gfm/)，虽然看起来对新手并不是很友好... 所以还是看这个吧：[https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)
+
+撰写完成后，填好 Commit message 与 description，点击 Commit new file：
+
+![](images/01/github-new-file-commit.png)
+
+Well done! 我们的第一篇文章就诞生了！假设你的新文章文件名为 helloworld.md，那么我们便可以通过 `https://<你的用户名>.github.io/<你的仓库名,可选>/helloworld.html` 访问到你的文章了:)
+
+## 5. Customize Your Blog
+
+至此，我们的博客便基本搭建完成了，可如果我们还需要一些个性化功能，比如说自己制作主题、给不同的页面设置不同的样式、甚至自动生成 index.md 文件的话，我们还需要一些进阶的操作。
+
+那么这些操作在哪里可以看到呢？
+
+未完待续。
