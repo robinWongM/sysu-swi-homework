@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Homework 01 - Setting up a Static Tech Blog on GitHub with Jekyll
+title: Lab 01 - Setting up a Static Tech Blog on GitHub with Jekyll
 ---
 
-# Homework 01 - Setting up a Static Tech Blog on GitHub with Jekyll
+# Lab 01 - Setting up a Static Tech Blog on GitHub with Jekyll
 
 首先是一段碎碎念，可以跳过不看。
 
