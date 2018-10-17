@@ -105,3 +105,27 @@ f(); // -> 10
 let f = () => {};
 f(); // -> undefined
 ```
+
+为什么是 `undefined` 而不是 `{}` 呢？因为 `{}` 是语句块的标志，而这个块中没有 return 任何表达式，所以其返回值为 `undefined`。
+
+## 4. Math.min() -> Infinity
+
+```
+Math.min(1, 4, 7, 2); // -> 1
+Math.max(1, 4, 7, 2); // -> 7
+Math.min(); // -> Infinity
+Math.max(); // -> -Infinity
+Math.min() > Math.max(); // -> true
+```
+
+持续颠覆数学三观。
+
+Explaination: 其实 `Math.min` 的功能是返回一系列数字中的最小数字，而当没有参数传进去时，它[返回的是 Infinity](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min#Return_value)。为什么是这么设计呢？
+
+考虑一下 Math.min 只有一个参数时的情况，比如 `Math.min(5)`。自然地，这个表达式应该得到一个为 5 的值，但是这个 5 是相对于哪个（些）数字来说是最小的呢？在这种情况下，将 5 与 Infinity 进行比较是最佳选择。
+
+## 5. More
+
+本文的内容均来自于 (What the f*ck JavaScript?)[https://github.com/denysdovhan/wtfjs]（© Denys Dovhan, Licensed under WTFPL)，里面还有很多有趣的例子（
+
+希望你能够爱上这门语言x
